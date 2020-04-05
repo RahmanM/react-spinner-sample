@@ -7,7 +7,7 @@ export class ProgressbarLine extends React.Component {
 
     return (
             <div>
-                <img alt="Loading ..." src='https://www.behance.net/gallery/36197347/Loading-Spinner-(GIF)' />
+                <img alt={this.props.alttext} src={this.props.imageUrl} height={this.props.height} width={this.props.width} align={this.props.alignment} />
             </div>
           );
   }
