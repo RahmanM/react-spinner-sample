@@ -15,13 +15,18 @@ class App extends Component {
 
   render() {
 
+      var url =
+        "https://stackblitz.com/files/react-spinner-sample/github/RahmanM/react-spinner-sample/master/loading.gif";
+
     return (
+
+      
       <div>
         <Hello name={this.state.name} />
         
         <input type="button" value="SHOW SPINNER" onClick={(e)=> this.showProgress(!this.state.show, e)} />
-        
-        <Progressbar show={this.state.show} />
+              
+        <Progressbar show={this.state.show} imageUrl={url} height="90" width="90" alignment="middle" alttext="Loading..." />
 
       </div>
     );
